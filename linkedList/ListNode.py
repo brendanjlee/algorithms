@@ -28,27 +28,3 @@ def printList(head):
     print(head.val)
     head = head.next
 
-
-
-# Recursive Reversal
-def reverseList(head):
-  pass
-
-def helper(head):
-  pass
-
-# iterative reversal
-def reverseListI(head):
-  prev = None
-  while head is not None:
-    temp = head.next
-    head.next = prev
-    prev = head
-    head = temp
-  return prev
-
-arr = [1, 2, 3, 4]
-head = createList(arr)
-
-rev = reverseListI(head)
-printList(rev)
